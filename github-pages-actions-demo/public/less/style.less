@@ -1,0 +1,28 @@
+@primary-bg-color: #102e4a;
+@primary-tx-color:#fff;
+@secondary-bg-color: #55c1ff;
+@secondary-tx-color: #000;
+
+@size:{
+    phones:380px;
+    tablet: 760px;
+    desktop:1024;
+    widesreen: 1200px;
+}
+@size-prf:{
+    phones:s;
+    tablet: m;
+    desktop:l;
+    widesreen: xl;
+}
+
+@import "helpers.less";
+@import "grid.less";
+*{
+    box-sizing: border-box;
+}body{
+    /* aqui incorporamos el no_paddin-margin */
+    .no_paddin_margin();
+    background-color: @primary-bg-color;
+    color: @primary-tx-color;
+}
