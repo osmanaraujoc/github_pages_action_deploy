@@ -20,5 +20,6 @@ export default defineConfig({
     plugins:[
         htmlPurgue({}),
         ViteMinifyPlugin({}),
-    ]
+    ],
+    base:"/github_pages_action_deploy"
 })
