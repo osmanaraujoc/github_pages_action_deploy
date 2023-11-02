@@ -1,0 +1,10 @@
+body {
+  font-family: sans-serif;
+  color: #ff0000;
+  background-color: #00ff00;
+  border-radius: 5px;
+  border: 1px solid #ff0000;
+}
+main {
+  max-width: #00ff00;
+}

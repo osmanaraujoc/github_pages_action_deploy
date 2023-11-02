@@ -1,0 +1,23 @@
+@primary-color: #ff0000;
+@secondary-color: #00ff00;
+@border-radius: 5px;
+@border: 1px solid @primary-color;
+
+@size : {
+    phone: 380px;
+    tablet: 760px;
+    desktop: 1024px;
+    widescreen: 1200px;
+}
+
+body {
+    font-family: sans-serif;
+    color: @primary-color;
+    background-color: @secondary-color;
+    border-radius: @border-radius;
+    border: @border;
+}
+
+main {
+    max-width: @secondary-color;
+}

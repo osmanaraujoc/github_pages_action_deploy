@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <!-- Incluir los archivos CSS de Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+     <link rel="stylesheet" href="./styles.less" />
+     <link rel="stylesheet"  type="text/css" href="./less/styless.css">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas y Respuestas</title>
+    <style>
+        .faq {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .answer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bienvenido a Mi Porfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FQM.HTML">FQM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactoPorfolio.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p>Para ver la respuesta haga cricl en la pregunta de su interes</p>
+    <div class="faq">
+        <details>
+            <summary>¿Qué es HTML?</summary>
+            <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear páginas web.</p>
+        </details>
+
+        <details>
+            <summary>¿Cómo se crea una lista en HTML?</summary>
+            <p>Para crear una lista en HTML, puedes utilizar las etiquetas &lt;ul&gt; (lista desordenada) o &lt;ol&gt; (lista ordenada) para definir la lista, y luego &lt;li&gt; para cada elemento de la lista.</p>
+        </details>
+
+        <details>
+            <summary>¿Qué es CSS?</summary>
+            <p>CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para dar formato y diseño a las páginas web.</p>
+        </details>
+    </div>
+
+    <script>
+        // JavaScript para mostrar/ocultar respuestas al hacer clic en las preguntas
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+    <footer class="bg-dark text-light text-center py-3">
+        © 2023 Mi Porfolio
+    </footer>
+     
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

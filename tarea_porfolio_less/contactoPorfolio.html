@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Incluir los archivos CSS de Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+      <link rel="stylesheet" href="./styles.less" />
+      <link rel="stylesheet"  type="text/css" href="./less/styless.css">
+    <title>Document</title>
+ <!-- Barra de navegación -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Bienvenido a Mi Porfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="FQM.HTML">FQM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactoPorfolio.html">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section class="contenedor">
+    <h1>Contacto</h1>
+    <form action="#" method="get">
+        <!-- action: quien recibe o envia informacion-->
+        <!--
+            El metodo se define comunmente como GET o POST
+            GET     Entrega los datos por medio de la URL
+            POST    Entrega los datos de manera oculta
+        -->
+        <fieldset class="form-group">
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" name="nombre_usuario" id="nombre" placeholder="Ingrese su nombre">
+            <label for="correo_personal">Correo Personal:</label>
+            <input type="email" name="correo" id="correo_personal" placeholder="Ingrese su correo">
+            <input type="hidden" name="llave" value="hola">
+        </fieldset>
+        <fieldset class="form-group">
+            <legend>Mensaje</legend>
+            <label for="">Asunto</label>
+            <input type="text" name="asunto" id="asunto">
+            <br>
+            <label for="mensaje">Descripción</label>
+            <input type="text" name="descripcion" id="mensaje">
+            <br>
+            <label for="Archivos Adjuntos">Archivos Adjuntos</label>
+            <input type="file" name="Archivos" id="Archivos">
+        </fieldset class="form-group">
+        <!-- Ejemplo de CSS en linea-->
+        <input id="boton" type="submit" value="Enviar">
+        <!-- Ejemplo de CSS -->
+
+    </form>
+</section>
+<footer class="bg-dark text-light text-center py-3">
+    © 2023 Mi Porfolio
+</footer>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>
